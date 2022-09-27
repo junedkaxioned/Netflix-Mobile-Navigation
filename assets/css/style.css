@@ -105,7 +105,97 @@ li {
   Header styling starts here
 =================================*/
 
+header { position: relative; }
+header .wrapper { width: 100%; }
+.hamburger { padding: 15px; }
+.text-indent { text-indent: -9999px; }
 
+.bar { 
+  width: 18px;
+  height: 3px;
+  margin-bottom: 3px;
+  border-radius: 3px;
+  display: block;
+  background: #000;
+}
+
+.nav {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar {
+  width: 77%;
+  height: 100ch;
+  background-color: #fff;
+  padding: 40px;
+}
+
+.nav-black {
+  max-width: 480px;
+  width: 60%;
+  min-width: 320px;
+  background-color: #000;
+  transition-delay: 0.4s;
+}
+
+.nav-red {
+  width: 95%;
+  background-color: #E51414;
+  transition-delay: 0.2s;
+}
+
+.nav {
+  transition-delay: 0.4s;
+  transform: translateX(0);
+}
+
+.nav-black{ transition-delay: 0s; }
+.nav-red{ transition-delay: 0.2s; }
+
+.nav-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.close-hamburger { margin-top: -30px;}
+
+.ham {
+  width: 18px;
+  height: 3px;
+  margin-bottom: 3px;
+  border-radius: 3px;
+  display: block;
+  background: #B3B3B3;
+}
+
+.ham:nth-child(1) { transform: translateY(18px) rotate(45deg); }
+.ham:nth-child(3) { transform: translateY(12px) rotate(-45deg); }
+.hidden { display: none; }
+.logo { width: 150px; }
+
+.nav-lists,
+.nested-lists {
+  padding: 10px 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.nested-lists { padding: 0px 20px 0px;}
+
+.list {
+  padding: 12px 0;
+  color: #221f1f;
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
 
 /*=================================
   Header styling ends here
@@ -115,7 +205,20 @@ li {
   main styling starts here
 =================================*/
 
+main .wrapper {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
+.netflix-logo { width: 250px; }
+
+h2 {
+  padding: 16px 0px;
+  text-transform: uppercase;
+}
 
 /*=================================
   main styling ends here
